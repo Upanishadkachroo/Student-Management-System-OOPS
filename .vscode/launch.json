@@ -2,6 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "HashTable",
+      "request": "launch",
+      "mainClass": "HashTable",
+      "projectName": "Student-Management-System-OOPS_fd96b5b3"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
