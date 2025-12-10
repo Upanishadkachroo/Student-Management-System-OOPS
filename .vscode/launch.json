@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Compiletimepoly",
+      "request": "launch",
+      "mainClass": "OpenClosedPrinciple.Compiletimepoly",
+      "projectName": "Student-Management-System-OOPS_fd96b5b3"
+    },
+    {
+      "type": "java",
+      "name": "PolymorphismDemo",
+      "request": "launch",
+      "mainClass": "OpenClosedPrinciple.PolymorphismDemo",
+      "projectName": "Student-Management-System-OOPS_fd96b5b3"
+    },
+    {
+      "type": "java",
+      "name": "PolymorphismDemo",
+      "request": "launch",
+      "mainClass": "PolymorphismDemo",
+      "projectName": "Student-Management-System-OOPS_fd96b5b3"
+    },
+    {
+      "type": "java",
       "name": "HashTable",
       "request": "launch",
       "mainClass": "HashTable",
