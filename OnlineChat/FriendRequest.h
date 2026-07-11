@@ -1,5 +1,5 @@
-#ifndef FRIENDREQUEST.H
-#define FRIENDREQUEST.H
+#ifndef FRIENDREQUEST_H
+#define FRIENDREQUEST_H
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -8,7 +8,7 @@ enum class RequestStatus{
     unread, read, accepted, rejected
 };
 
-class FriendsRequest{
+class FriendRequest{
     private:
     int fromuserid;
     int touserid;
@@ -18,11 +18,25 @@ class FriendsRequest{
     string timestamp;
 
     public:
-    FriendsRequest();
+    FriendRequest();
 
-    FriendsRequest(int formuserid, int touserid, const string &timestamp);
+    FriendRequest(int formuserid, int touserid, const string &timestamp);
 
     int getfromuser() const;
 
-    int gettouser() const
-}
+    int gettouser() const;
+
+    RequestStatus getstatus() const;
+
+    string gettimestamp() const;
+
+    void markasread();
+
+    void accept();
+
+    void reject();
+
+    void display() const;
+};
+
+#endif
