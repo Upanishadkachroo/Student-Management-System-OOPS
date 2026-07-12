@@ -4,6 +4,7 @@ using namespace std;
 #include "FriendRequest.h"
 #include "PrivateChat.h"
 #include "GroupChat.h"
+#include "User.h"
 
 int main(){
     // Message m1(1, 101, "hellow everyone", "12:30 pm");
@@ -25,19 +26,30 @@ int main(){
 
     // request.display();
 
-    PrivateChat privateChat(1,101,102);
+    // PrivateChat privateChat(1,101,102);
 
-    privateChat.adduser(103);
+    // privateChat.adduser(103);
 
-    GroupChat group(2);
+    // GroupChat group(2);
 
-    group.adduser(101);
-    group.adduser(102);
-    group.adduser(103);
+    // group.adduser(101);
+    // group.adduser(102);
+    // group.adduser(103);
 
-    group.removeuser(102);
+    // group.removeuser(102);
+
+    User rahul(101,"Rahul","abc");
+
+    User aman(102,"Aman","xyz");
+
+    User neha(103,"Neha","123");
+
+    rahul.addFriend(&aman);
+
+    rahul.addFriend(&neha);
+
+    rahul.showfriend();
 
     return 0;
 
-    return 0;
 }
